@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CPP makefile</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body id="idBody" onload="cargarDatos()">
+
+    <header class="container">
+        <h1 class="text-center">Información</h1>
+    </header>
+
+    <main class="container w-50 text-center">
+        <div>
+            <button id="btnGuardar" class="btn btn-primary" onclick="guardarDatos()">Guardar</button>
+        </div>
+
+        <div>
+            <input type="text" id="nombre" class="form-control mt-3" placeholder="Nombre">
+            <input type="text" id="apellido" class="form-control mt-3" placeholder="Apellido">
+            <input type="number" id="edad" class="form-control mt-3" placeholder="Edad">
+            <input type="date" id="fechaNacimiento" class="form-control mt-3" placeholder="Fecha de Nacimiento">
+            Configuración
+            <input type="color" id="confColor">
+        </div>
+
+        <div class="mt-4" id="resultado"></div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js?v03"></script>
+</body>
+</html>
